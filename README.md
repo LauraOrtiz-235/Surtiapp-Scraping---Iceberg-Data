@@ -58,10 +58,12 @@ Te devolverá una lista de todos los productos y atributos extraídos de esa cat
 
 ```bash
 .
-├── scraping.py       # Lógica principal de scraping con Selenium + JSON endpoint
-├── main.py           # FastAPI: define y corre la API del microservicio
-├── analysis.py       # Procesamiento y análisis de los datos extraídos
-├── data/             # Carpeta con datasets nuevos obtenidos vía scraping
-├── out/              # Archivos CSV con resultados del análisis por pregunta
-├── requirements.txt  # Dependencias necesarias (FastAPI, Selenium, Pandas, etc.)
+├── scraping.py                     # Lógica principal de scraping con Selenium + JSON endpoint
+├── main.py                         # FastAPI: define y corre la API del microservicio
+├── analysis.py                     # Procesamiento y análisis de los datos extraídos
+├── data/                           # Carpeta con datasets nuevos obtenidos vía scraping
+├── out/                            # Archivos CSV con resultados del análisis por pregunta
+├── requirements.txt                # Dependencias necesarias (FastAPI, Selenium, Pandas, etc.)
+├── Surtiapp Scraping Análisis.pdf  # Documentación a detalle de los códigos y el análisis obtenido
+├── visualizations.pbix             # Visualizaciones creadas con Power BI
 └── README.md         # Este archivo 🙂
