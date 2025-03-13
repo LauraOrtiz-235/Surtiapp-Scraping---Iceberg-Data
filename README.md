@@ -1,5 +1,4 @@
 # 🛒 Surtiapp Scraper & Data Analysis
-
 Este proyecto implementa un microservicio de scraping para la tienda **Surtiapp**, desarrollado como parte de una prueba técnica para Iceberg Data.
 
 Permite extraer información estructurada de productos (precio, stock, marca, nombre, imagen, etc) desde cualquier categoría pública del sitio, sin necesidad de autenticarse. El objetivo es apoyar decisiones estratégicas de inventario y precios para mayoristas mediante automatización de datos.
@@ -7,7 +6,6 @@ Permite extraer información estructurada de productos (precio, stock, marca, no
 ---
 
 ## ⚙️ Tecnologías utilizadas
-
 - **Python 3.10+**
 - **FastAPI**: Para crear la API RESTful
 - **Selenium + Selenium Wire**: Para renderizar contenido dinámico y usar proxy
@@ -17,7 +15,6 @@ Permite extraer información estructurada de productos (precio, stock, marca, no
 ---
 
 ## ⚙️ ¿Qué hace este proyecto?
-
 1. Automatiza el scraping de productos por categoría desde Surtiapp usando **Selenium + JSON interno**.
 2. Expone un **microservicio API** con FastAPI para solicitar el scraping vía URL.
 3. Integra datos históricos y nuevos para realizar análisis exploratorio.
@@ -43,12 +40,13 @@ Este proyecto incluye un microservicio creado con FastAPI que permite extraer pr
 ## 📊 Análisis de datos
 Con el archivo analysis.py se responden 5 preguntas clave del negocio, como:
 
-¿Qué categorías tienen mayor variabilidad de precios?
-¿Hay relación entre stock y fluctuaciones de precio?
-¿Qué productos fueron añadidos luego del 6 de marzo?
-¿Qué patrones muestran los precios por categoría?
-¿Qué productos están por agotarse?
-Los resultados se guardan en out/ como CSV y fueron visualizados en Power BI en visualizations.pbix.
+1. ¿Qué categorías tienen mayor variabilidad de precios?
+2. ¿Hay relación entre stock y fluctuaciones de precio?
+3. ¿Qué productos fueron añadidos luego del 6 de marzo?
+4. ¿Qué patrones muestran los precios por categoría?
+5. ¿Qué productos están por agotarse?
+
+Los resultados se guardan en out/ como CSV y fueron visualizados en Power BI en visualizations.pbix. Todos los insights están documentados y listos para decisiones en Surtiapp Scraping Análisis.pdf.
 
 ---
 
