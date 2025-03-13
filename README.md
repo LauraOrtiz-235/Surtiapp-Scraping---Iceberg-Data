@@ -36,8 +36,33 @@ El sitio no muestra el precio de los productos en el HTML. Por eso:
 ---
 
 ### 2. API 
-Este proyecto incluye un microservicio creado con FastAPI que permite extraer productos desde una categoría específica de Surtiapp. Puedes probar el scraping vía API:
+Este proyecto incluye un microservicio creado con FastAPI que permite extraer productos desde una categoría específica de Surtiapp. 
 
+---
+
+## 📊 Análisis de datos
+Con el archivo analysis.py se responden 5 preguntas clave del negocio, como:
+
+¿Qué categorías tienen mayor variabilidad de precios?
+¿Hay relación entre stock y fluctuaciones de precio?
+¿Qué productos fueron añadidos luego del 6 de marzo?
+¿Qué patrones muestran los precios por categoría?
+¿Qué productos están por agotarse?
+Los resultados se guardan en out/ como CSV y fueron visualizados en Power BI en visualizations.pbix.
+
+---
+
+## 🚀 ¿Cómo correr el proyecto?
+### 1. Clona el repositorio y crea entorno virtual
+```bash
+git clone https://github.com/TU-USUARIO/Surtiapp-Scraping-Iceberg-Data.git
+cd Surtiapp-Scraping-Iceberg-Data
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+### 2. Ejecutar la API REST
+Corre el microservicio con FastAPI:
 ```bash
 # Asegúrate de estar en tu entorno virtual
 uvicorn main:app --reload
@@ -61,6 +86,7 @@ Te devolverá una lista de todos los productos y atributos extraídos de esa cat
 ├── scraping.py                     # Lógica principal de scraping con Selenium + JSON endpoint
 ├── main.py                         # FastAPI: define y corre la API del microservicio
 ├── analysis.py                     # Procesamiento y análisis de los datos extraídos
+├── surtiapp_dataset.csv            # Datos históricos
 ├── data/                           # Carpeta con datasets nuevos obtenidos vía scraping
 ├── out/                            # Archivos CSV con resultados del análisis por pregunta
 ├── requirements.txt                # Dependencias necesarias (FastAPI, Selenium, Pandas, etc.)
