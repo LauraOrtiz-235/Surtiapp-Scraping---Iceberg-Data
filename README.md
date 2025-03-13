@@ -66,4 +66,4 @@ Te devolverá una lista de todos los productos y atributos extraídos de esa cat
 ├── requirements.txt                # Dependencias necesarias (FastAPI, Selenium, Pandas, etc.)
 ├── Surtiapp Scraping Análisis.pdf  # Documentación a detalle de los códigos y el análisis obtenido
 ├── visualizations.pbix             # Visualizaciones creadas con Power BI
-└── README.md         # Este archivo 🙂
+└── README.md                       # Este archivo 🙂
